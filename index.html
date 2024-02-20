@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora Alcool ou Gasolina?</title>
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <link rel="shortcut icon" href="/src/imagens/logo.png" type="image/x-icon">
+  </head>
+  <body>
+    <main class="container">
+      <img
+        class="logo"
+        src="./src/imagens/logo.png"
+        alt="Logo da Calculadora Alcool ouGasolina?"
+      />
+
+      <h1 class="title">Qual a melhor opção para você?</h1>
+
+      <form onsubmit="calcular(event)" class="form">
+        <label>Álcool (preço por litro)</label>
+        <input
+          id="alcool"
+          class="input"
+          type="number"
+          placeholder="3.39"
+          min="1"
+          step="0.01"
+          required
+        />
+
+        <label>Gasolina (preço por litro)</label>
+        <input
+          id="gasolina"
+          class="input"
+          type="number"
+          placeholder="6.58"
+          min="1"
+          step="0.01"
+          required
+        />
+        <input class="button" type="submit" value="Calcular" />
+      </form>
+
+      <section id="content__result" class="hide result ">
+        <span id="text__result"></span>
+
+        <span id="alcool__result"></span>
+        <span id="gasolina__result"></span>
+      </section>
+    </main>
+
+    <div class="info">
+      <span class="tootip">Veja como é feito o calculo</span>
+      <a href="/src/index2.html">
+        <img
+          class="info-img"
+          src="./src/imagens/info.png"
+          alt="veja como feito o calculo"
+        />
+      </a>
+    </div>
+
+    <footer>
+      Feito por MarceloClash
+      <a href="https://github.com/MarceloClash">gitHub</a>,
+      <a href="https://www.linkedin.com/in/marceloluizdeoliveira/">LinkedIn</a>
+      e <a href="marceloluiz1429@gmail.com">E-Mail</a>.  a licença
+      do canal <strong>Sujeito Progamador</strong>
+      <a href="https://youtu.be/BtGFWdf9ibE">youtube</a>
+    </footer>
+    <script src="./src/js/script.js"></script>
+  </body>
+</html>
